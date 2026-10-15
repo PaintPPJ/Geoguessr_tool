@@ -1,0 +1,21 @@
+{
+  "countryCodes": [
+    "BR"
+  ],
+  "distributionStrategy": {
+    "key": "FixedCountByMaxMinDistance",
+    "minMinDistance": 50,
+    "locationCountGoal": 17000
+  },
+  "output": {
+    "locationTags": [
+      "Season",
+      "Year"
+    ]
+  },
+  "subdivisionDistribution": {
+    "BR": {
+      "BR-AC": 17000
+    }
+  }
+}

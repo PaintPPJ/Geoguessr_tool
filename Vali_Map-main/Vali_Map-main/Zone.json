@@ -1,0 +1,16 @@
+{
+  "countryCodes": [
+    "GR"
+  ],
+  "distributionStrategy": {
+    "key": "EvenlyByDistanceWithinCountry",
+    "fixedMinDistance": 25,
+    "locationCountGoal": 102000
+  },
+  "geometryFilters": [
+    {
+      "filePath": "C:/Users/quart/Downloads/289 area code zone.json",
+      "combinationMode": "union"
+    }
+  ]
+}

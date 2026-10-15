@@ -1,0 +1,27 @@
+{
+  "countryCodes": [
+    "US"
+  ],
+  "distributionStrategy": {
+    "key": "FixedCountByMaxMinDistance",
+    "minMinDistance": 200,
+    "locationCountGoal": 380,
+    "countryDistributionFromMap": "proworld"
+  },
+  "subdivisionDistribution": {
+    "US": {
+         "US-SD": 38,
+      "US-TN": 38,
+      "US-TX": 38,
+      "US-UT": 38,
+      "US-VT": 38,
+      "US-VA": 38,
+      "US-WA": 38,
+      "US-WV": 38,
+      "US-WI": 38,
+      "US-WY": 38
+
+      
+    }
+  }
+}

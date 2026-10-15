@@ -1,0 +1,22 @@
+{
+  "countryCodes": [
+    "PL"
+  ],
+  "distributionStrategy": {
+    "key": "FixedCountByMaxMinDistance",
+    "minMinDistance": 200,
+    "locationCountGoal": 100000,
+    "countryDistributionFromMap": "aarw"
+  },
+ 
+  "globalLocationFilter": "",
+
+  "output": {
+    "panoVerificationStrategy": "Newest",
+    "panoVerificationExpression": "",
+    "globalHeadingExpression": "",
+    "locationTags": [
+      "Year"
+      ]
+    }
+  }

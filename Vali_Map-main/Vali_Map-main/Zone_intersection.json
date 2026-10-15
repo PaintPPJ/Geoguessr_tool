@@ -1,0 +1,15 @@
+{
+  "countryCodes": [
+    "TH"
+  ],
+  "distributionStrategy": {
+    "key": "EvenlyByDistanceWithinCountry",
+    "fixedMinDistance": 50
+  },
+  "globalLocationFilter": "Roads0 gte 2 ",
+  "geometryFilters": [
+    {
+      "filePath": "C:/Users/quart/Downloads/33 Brazil area code.json"
+    }
+  ]
+}

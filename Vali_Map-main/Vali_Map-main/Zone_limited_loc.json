@@ -1,0 +1,17 @@
+{
+  "countryCodes": [
+    "US"
+  ],
+  "distributionStrategy": {
+    "key": "FixedCountByMaxMinDistance",
+    "minMinDistance": 200,
+    "locationCountGoal": 900,
+    "countryDistributionFromMap": "yellowbelly"
+  },
+  "geometryFilters": [
+    {
+      "filePath": "C:/Users/quart/Downloads/USA main land.json",
+      "combinationMode": "union"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "countryCodes": [
+    "BR"
+  ],
+  "distributionStrategy": {
+    "key": "FixedCountByMaxMinDistance",
+    "minMinDistance": 200,
+    "locationCountGoal": 100000,
+    "countryDistributionFromMap": "yellowbelly"
+  },
+  
+  "globalLocationFilter": "",
+
+  "output": {
+    "panoVerificationStrategy": "Newest",
+    "panoVerificationExpression": "",
+    "globalHeadingExpression": ""
+    
+  }
+}

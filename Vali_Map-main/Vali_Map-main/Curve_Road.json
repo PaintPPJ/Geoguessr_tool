@@ -1,0 +1,35 @@
+{
+  "countryCodes": [
+    "*"
+  ],
+  "distributionStrategy": {
+    "key": "FixedCountByMaxMinDistance",
+    "minMinDistance": 200,
+    "locationCountGoal": 100000,
+    "countryDistributionFromMap": ""
+  },
+  "namedExpressions": {
+    "$$decentIntersectionTypes": "HighwayTypeCount gt 1 and HighwayType neq 'Track' and HighwayType neq 'Motorway' and (HighwayType eq 'Service' and HighwayType eq 'Unclassified') eq False and (HighwayType eq 'Service' and HighwayType eq 'Residential') eq False",
+    "$$sameAngle": "(current:DrivingDirectionAngle modulo 180 - DrivingDirectionAngle modulo 180) lt 20 and (current:DrivingDirectionAngle modulo 180 - DrivingDirectionAngle modulo 180) gt -20",
+    "$$maybeDrivingTheOtherWay": "(current:DrivingDirectionAngle modulo 180 - DrivingDirectionAngle modulo 180) gt 160 or (current:DrivingDirectionAngle modulo 180 - DrivingDirectionAngle modulo 180) lt -160",
+    "$$notDrivingTheOtherWay": "$$maybeDrivingTheOtherWay eq false",
+    "$$differentAngle": "$$sameAngle eq false"
+  },
+  "globalLocationFilter": "Roads25 eq 1",
+
+"globalLocationPreferenceFilters": [
+  {
+    "expression": "true",
+    "percentage": 100,
+    "fill": true,
+    "locationTag": "curve",
+    "neighborFilters": [
+      {
+        "radius": 120,
+        "expression": "$$differentAngle and $$notDrivingTheOtherWay and Roads25 eq 1",
+        "bound": "some"
+      }
+    ]
+  }
+]
+}
